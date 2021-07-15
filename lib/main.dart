@@ -3,6 +3,7 @@ import 'package:google_nav_bar/google_nav_bar.dart';
 import 'package:line_icons/line_icons.dart';
 import 'package:flutter_clean_calendar/flutter_clean_calendar.dart';
 import 'calendar.dart';
+import 'focus/focus.dart';
 
 void main() => runApp(MaterialApp(
     builder: (context, child) {
@@ -33,10 +34,7 @@ class _NavBar extends State<MyHomePage> {
       'Timeline',
       style: optionStyle,
     ),
-    Text(
-      'Focus',
-      style: optionStyle,
-    ),
+    FocusScreen(),
   ];
 
   @override
