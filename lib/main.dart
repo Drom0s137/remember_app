@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
 import 'package:line_icons/line_icons.dart';
-import 'package:flutter_clean_calendar/flutter_clean_calendar.dart';
 import 'calendar.dart';
+import 'reminders.dart';
+import 'timeline.dart';
 
 void main() => runApp(MaterialApp(
     builder: (context, child) {
@@ -24,15 +25,9 @@ class _NavBar extends State<MyHomePage> {
   static const TextStyle optionStyle =
       TextStyle(fontSize: 30, fontWeight: FontWeight.w600);
   static List<Widget> _widgetOptions = <Widget>[
-    Text(
-      'Reminders',
-      style: optionStyle,
-    ),
+    ReminderList(),
     CalendarScreen(),
-    Text(
-      'Timeline',
-      style: optionStyle,
-    ),
+    TimeLine(),
     Text(
       'Focus',
       style: optionStyle,
