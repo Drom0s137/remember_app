@@ -4,6 +4,7 @@ import 'package:line_icons/line_icons.dart';
 import 'calendar.dart';
 import 'reminders.dart';
 import 'timeline.dart';
+import 'focus/focus.dart';
 
 void main() => runApp(MaterialApp(
     builder: (context, child) {
@@ -28,10 +29,7 @@ class _NavBar extends State<MyHomePage> {
     ReminderList(),
     CalendarScreen(),
     TimeLine(),
-    Text(
-      'Focus',
-      style: optionStyle,
-    ),
+    FocusScreen(),
   ];
 
   @override
