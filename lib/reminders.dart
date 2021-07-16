@@ -20,7 +20,7 @@ class _MyStatefulWidgetState extends State<ReminderList> {
   final allChecked = CheckBoxModel(title: 'All Finished');
 
   final checkBoxListMorning = [
-    CheckBoxModel(title: 'CheckBox 2'),
+    CheckBoxModel(title: 'CheckBox 1'),
     CheckBoxModel(title: 'CheckBox 2'),
   ];
   final checkBoxListAfternoon = [
