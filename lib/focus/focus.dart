@@ -12,12 +12,22 @@ class _FocusScreenState extends State<FocusScreen> {
     // return Scaffold(
     //   body: Text('Hi'),
     // );
-    return CircularCountDownTimer(
-      width: MediaQuery.of(context).size.width / 2,
-      height: MediaQuery.of(context).size.height / 2,
-      duration: 10,
-      fillColor: Colors.blue,
-      ringColor: Colors.grey,
+    return Scaffold(
+      body: SafeArea(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            CircularCountDownTimer(
+              width: MediaQuery.of(context).size.width / 2,
+              height: MediaQuery.of(context).size.height / 2,
+              duration: 10,
+              fillColor: Colors.blue,
+              ringColor: Colors.grey,
+            ),
+          ],
+        ),
+      ),
     );
   }
 }
